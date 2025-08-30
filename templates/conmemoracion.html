@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Colegio Teresa Martínez de Varela IED</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(to right, #0fb3e6, #0077ff);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .logo {
+            max-width: 100px;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+        
+        .nav-bar {
+            background-color: #e78e1a;
+            padding: 0.5rem;
+        }
+        
+        .nav-bar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .nav-bar li {
+            margin: 0 10px;
+        }
+        
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-bar a:hover, .nav-bar a.active {
+            background-color: #49b7e2;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .section-title {
+            color: #1b73f7;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+            width: 100px;
+            height: 4px;
+            background-color: #2289eb;
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        .about-text {
+            padding: 1rem;
+        }
+        
+        .about-image {
+            text-align: center;
+        }
+        
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .values-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            justify-content: center;
+        }
+        
+        .value-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            width: calc(33.333% - 1rem);
+            min-width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .value-icon {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+        
+        .value-title {
+            color: #eb8b0f;
+            margin-bottom: 0.7rem;
+
+        
+    }
+        
+
+        .team-section {
+            margin-top: 3rem;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .team-member {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .team-photo {
+            height: 200px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #0d8eda;
+        }
+        
+        .team-details {
+            padding: 1rem;
+        }
+        
+        .team-name {
+            color: #d14d10;
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-role {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer {
+            background-color: #2c165e;
+            color: rgb(187, 12, 12);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-info {
+            margin-top: 1rem;
+        }
+        
+        .social-icons {
+            margin-top: 1rem;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNFYzYFnYxSJD_dvR4NJ6cgt-ChCLYwFel4g&s" alt="Logo Colegio" class="logo">
+        <h1>Colegio Teresa Martínez de Varela IED</h1>
+        <p>Educación de calidad para un mundo mejor</p>
+    </div>
+    
+    <div class="nav-bar">
+        <ul> 
+            <li><a href="sofi.html">SOFI</a></li>
+            <li><a href="index.html">Blog</a></li> 
+            <li><a href="#" class="active">Sobre Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <h2 class="section-title">Sobre Nosotros</h2>
+        
+        <div class="about-grid">
+            <div class="about-text">
+                <h3>¿Quiénes Somos?</h3>
+                <p>El Colegio Teresa Martínez de Varela IED es una institución educativa distrital comprometida con la formación integral de niños, niñas y jóvenes. Nos dedicamos a ofrecer una educación de calidad que combina excelencia académica con una sólida formación en valores.</p>      
+                <h3>Nuestro Enfoque Artistico </h3>
+                <p>El enfoque artístico del colegio busca cultivar la creatividad y expresión personal de los estudiantes a través de un currículo integrado que conecta el arte con otras materias. Se fomenta la apreciación estética y el desarrollo de habilidades técnicas en diversas disciplinas artísticas, como pintura, música, teatro y danza, en espacios creativos diseñados para ello. El objetivo final es utilizar el arte como herramienta para el desarrollo integral de los estudiantes, promoviendo el pensamiento crítico, la resolución de problemas, la colaboración y la empatía.</p> 
+                <h3>Nuestra Visión</h3>
+                <p>Para el año 2030, el Colegio Teresa Martínez de Varela IED será reconocido a nivel distrital como una institución educativa de excelencia, líder en innovación pedagógica, inclusión y formación de ciudadanos comprometidos con el desarrollo sostenible de su comunidad.</p>
+            </div>
+            
+            <div class="about-image">
+                <img src="https://renobo.com.co/sites/default/files/2023-12/1.jpg" alt="Instalaciones del Colegio Teresa Martínez de Varela IED">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1DANotFnIUfTGi3BuaK0L5EpMMl3lHMlxSoTaGVo0WVYNfAEEz_isOHMGCzG5KQvWHog&usqp=CAU" alt="Instalaciones del Colegio Teresa Martínez de Varela IED">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcy2i2ddD4u52AAQdwts74s3ujeaMsF3uDEQ&s" alt="Instalaciones del Colegio Teresa Martínez de Varela IED">
+                <img src="https://renobo.com.co/sites/default/files/2022-05/AEREA-01-ALTA.jpg" alt="Instalaciones del Colegio Teresa Martínez de Varela IED">
+            
+            </div>
+        </div>
+        
+        <h3 class="section-title">Nuestros Valores</h3>
+        <div class="values-container">
+            <div class="value-card">
+                <div class="value-icon">🌱</div>
+                <h4 class="value-title">Respeto</h4>
+                <p>En nuestro entorno escolar, el respeto se manifiesta en la valoración de la dignidad de cada miembro de la comunidad educativa. Esto implica tratar a compañeros, profesores y personal del colegio con cortesía y consideración, reconociendo y aceptando las diferencias individuales para la convivencia armónica. El respeto también se extiende a las normas y reglas establecidas, así como a las opiniones y pertenencias de los demás.</p>
+            </div>
+        
+            
+            <div class="value-card">
+                <div class="value-icon">🤝</div>
+                <h4 class="value-title">Empatìa</h4>
+                <p>Aqui promovemos la empatía, los estudiantes aprenden a ponerse en el lugar del otro, mostrando sensibilidad ante sus necesidades y dificultades. Esto fomenta la solidaridad y el apoyo mutuo entre los miembros de la comunidad escolar, creando un ambiente de confianza y colaboración. Asi se contribuye al bienestar emocional de todos, permitiendo que los estudiantes se sientan seguros y apoyados..</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">💪</div>
+                <h4 class="value-title">Responsabilidad </h4>
+                <p>Se fomenta el compromiso individual con las tareas y obligaciones escolares. Esto incluye cumplir con los horarios, entregar trabajos a tiempo y asumir las consecuencias de las propias acciones. La responsabilidad también implica el cuidado del entorno escolar y el uso responsable de los recursos.</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">🔍</div>
+                <h4 class="value-title">Pensamiento Crítico</h4>
+                <p>Estimulamos la capacidad de análisis, reflexión y cuestionamiento para formar ciudadanos autónomos y propositivos.</p>
+            </div>
+            
+    
+             
+            </div>
+                <h2>Nuestro Equipo Directivo</h2>
+                <p>El Colegio TMV cuenta con un equipo de profesionales altamente cualificados y comprometidos con la educación de calidad. Nuestro cuerpo docente está formado por educadores con amplia experiencia y formación continua, dedicados a guiar y motivar a los estudiantes en su camino de aprendizaje.</p>
+            </div>
+        </div>
+    
+            <footer>
+                <p>&copy; 2025 Colegio Teresa Martinez de Varela. Todos los derechos reservados.</p>
+                <p>Cra. 94 N° 8 C - 49 (Barrio El Tintal, Sector la Magdalena) | Teléfono: 601 3138758 | Email: col.teresa.m.devarela@educacionbogota.edu.co</p>
+            </footer>
+</body>
+</html>
